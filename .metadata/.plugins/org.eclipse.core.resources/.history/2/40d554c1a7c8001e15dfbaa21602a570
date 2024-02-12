@@ -1,0 +1,41 @@
+package Sorting;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+class Student {
+	int studentId;
+	String studentName;
+	String pincode;
+
+	public Student(int studentId, String studentName, String pincode) {
+		super();
+		this.studentId = studentId;
+		this.studentName = studentName;
+		this.pincode = pincode;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [studentId=" + studentId + ", studentName=" + studentName + ", pincode=" + pincode + "]";
+	}
+
+}
+
+public class App03_ComparatorJava8 {
+	public static void main(String[] args) {
+		List<Student> studentList = Arrays.asList(new Student(101, "Shubham Nigam", "208005"),
+				new Student(104, "Pankaj Nigam", "233212"), new Student(106, "Rekha Nigam", "112344"),
+				new Student(109, "AP Nigam", "455443"));
+		
+		Collections.sort(studentList, new Comparator<Student>() {
+			
+			public int compare(Laptop obj1,Laptop obj2) {
+				return obj1.studentId > obj2.studentId 
+			}
+		});
+		studentList.forEach(System.out::println);
+	}
+}

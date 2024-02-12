@@ -1,0 +1,11 @@
+package doublecolonoperator;
+
+
+class MyThread implements Runnable{
+	
+}
+public class App02 {
+	public static void main(String[] args) {
+
+	}
+}

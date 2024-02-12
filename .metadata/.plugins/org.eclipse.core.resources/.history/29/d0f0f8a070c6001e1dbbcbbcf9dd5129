@@ -1,0 +1,22 @@
+package doublecolonoperator;
+
+
+@FunctionalInterface
+interface inter{
+	void m1(int a);
+}
+public class App01{
+			
+	public void m1(int a) {
+		System.out.println(a);
+	}
+	
+	public static void main(String[] args) {
+			// using lamda function
+			inter i = (a)->System.out.println(a);
+			
+			// using double colon operator
+			inter i1 = App01::m1; 
+	}
+}
+

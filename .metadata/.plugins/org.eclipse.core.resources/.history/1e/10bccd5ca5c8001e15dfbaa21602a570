@@ -1,0 +1,14 @@
+package Sorting;
+
+import java.util.Arrays;
+
+class Laptop{
+	int lid;
+	String laptopName;
+	double laptopPrice;
+}
+public class App02_ComparableJava7 {
+	public static void main(String[] args) {
+		
+	}
+}

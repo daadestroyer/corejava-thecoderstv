@@ -1,0 +1,28 @@
+package Sorting;
+
+import java.util.Arrays;
+
+class Laptop{
+	int lid;
+	String laptopCompany;
+	double laptopPrice;
+	
+	public Laptop(int lid, String laptopCompany, double laptopPrice) {
+		super();
+		this.lid = lid;
+		this.laptopCompany = laptopCompany;
+		this.laptopPrice = laptopPrice;
+	}
+
+	@Override
+	public String toString() {
+		return "Laptop [lid=" + lid + ", laptopCompany=" + laptopCompany + ", laptopPrice=" + laptopPrice + "]";
+	}
+	
+	
+}
+public class App02_ComparableJava7 {
+	public static void main(String[] args) {
+		
+	}
+}

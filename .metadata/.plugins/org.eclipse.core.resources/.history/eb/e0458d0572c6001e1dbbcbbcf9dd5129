@@ -1,0 +1,23 @@
+package doublecolonoperator;
+
+
+class MyThread implements Runnable{
+	public void run() {
+		System.out.println("hello");
+	}
+}
+public class App02 {
+	
+	public void run() {
+		System.out.println("run method");
+	}
+	
+	public static void main(String[] args) {
+		
+		Runnable runnable = ;
+		
+		Thread thread = new Thread(new App02()::run);
+		thread.start();
+		
+	}
+}

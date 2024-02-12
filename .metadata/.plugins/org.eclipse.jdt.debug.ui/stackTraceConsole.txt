@@ -1,0 +1,5 @@
+public static void main(String args[]) {
+Bus b=new Bus();
+System.out.println(b.getNoOfWheels());
+Vehicle.DefaultVehicle d=new Vehicle.DefaultVehicle();
+System.out.println(d.getNoOfWheels());

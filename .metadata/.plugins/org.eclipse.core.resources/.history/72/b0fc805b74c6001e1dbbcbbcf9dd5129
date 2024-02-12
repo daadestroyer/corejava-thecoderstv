@@ -1,0 +1,22 @@
+package doublecolonforeach;
+
+import java.util.List;
+
+public class App01 {
+	public static void main(String[] args) {
+		// older approach
+		/*
+		List<String> list = List.of("ram","laxman","bharath","shatrughan");
+		for(String str:list) {
+			System.out.println(str);
+		}
+		*/
+		
+		// newer approach using forEach
+		List<String> list = List.of("ram","laxman","bharath","shatrughan");
+		
+		// way - 1 using lambda expression
+		list.forEach((name)->System.out.println(name););
+		
+	}
+}

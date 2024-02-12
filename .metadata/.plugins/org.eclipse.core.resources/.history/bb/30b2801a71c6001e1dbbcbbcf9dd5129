@@ -1,0 +1,12 @@
+package doublecolonoperator;
+
+@FunctionalInterface
+interface Inter {
+	void m1(int a);
+}
+
+public class App02 {
+	public static void main(String[] args) {
+
+	}
+}

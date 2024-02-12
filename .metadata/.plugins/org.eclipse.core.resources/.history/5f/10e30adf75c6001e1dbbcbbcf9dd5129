@@ -1,0 +1,45 @@
+package doublecolonforeach;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class App01 {
+	public static void main(String[] args) {
+		// older approach
+		/*
+		List<String> list = List.of("ram","laxman","bharath","shatrughan");
+		for(String str:list) {
+			System.out.println(str);
+		}
+		*/
+		
+		// newer approach using forEach
+		List<String> list = List.of("ram","laxman","bharath","shatrughan");
+		
+		// way - 1 using lambda expression
+		 list.forEach((name)->System.out.println(name));
+		
+		// way - 2 using double colon operator
+		list.forEach(System.out::println);
+		
+		
+		Set<String> set = Set.of("AAA","BBB","CCC","DDD");
+		// using older way
+//		for(String str : set) {
+//			System.out.println(str);
+//		}
+		
+		// using lambda function with foreach
+		// set.forEach((name)->System.out.println(name));
+		
+		// double colon operator with for each
+		set.forEach(System.out::println);
+		
+		
+		Map<String, String> map = Map.of("A","alex","B","Brian","T","Torreto");
+		
+		
+		
+	}
+}
